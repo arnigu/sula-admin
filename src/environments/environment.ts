@@ -3,8 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
-};
+  production: false,
+  connection: {
+    baseUrl: 'http://local.gopro.net:8080/GoPro/api',
+    wsBaseUrl: 'ws://local.gopro.net:8080/GoPro/ws',
+    authmode: 'token'
+  }
+}
 
 /*
  * For easier debugging in development mode, you can import the following file
